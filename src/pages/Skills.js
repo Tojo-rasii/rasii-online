@@ -9,27 +9,79 @@ function Skills(){
         <main className='skills-main' id="skills-main">
             <section className='skills-section' id='skills-section1'>
                 <artice className="p-lg-4 shadow-lg rounded-4 skills-skills">
-                    <legend className='skills-circle p-lg-5 shadow-sm'>
-                        <p className='fw-bold text-info'>75%</p>
-                    </legend>
+                    <div class="single-chart">
+                      <svg viewBox="0 0 36 36" class="circular-chart orange">
+                        <path class="circle-bg"
+                          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="circle"
+                          stroke-dasharray="70, 100"
+                          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="percentage">70%</text>
+                      </svg>
+                    </div>
                     <p className='fw-semibold text-center fs-5'>ReactJS</p>
                 </artice>
                 <artice className="p-lg-4 shadow-lg rounded-4 skills-skills">
-                    <legend className='skills-circle1 p-lg-5 shadow-sm'>
-                        <p className='fw-bold para-danger'>89%</p>
-                    </legend>
+                <div class="single-chart">
+                      <svg viewBox="0 0 36 36" class="circular-chart red">
+                        <path class="circle-bg"
+                          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="circle"
+                          stroke-dasharray="88, 100"
+                          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="percentage">88%</text>
+                      </svg>
+                    </div>
                     <p className='fw-semibold text-center fs-5'>HTML</p>
                 </artice>
                 <artice className="p-lg-4 shadow-lg rounded-4 skills-skills">
-                    <legend className='skills-circle2 p-lg-5 shadow-sm'>
-                        <p className='fw-bold text-primary'>95%</p>
-                    </legend>
+                <div class="single-chart">
+                      <svg viewBox="0 0 36 36" class="circular-chart blue">
+                        <path class="circle-bg"
+                          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="circle"
+                          stroke-dasharray="90, 100"
+                          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="percentage">90%</text>
+                      </svg>
+                    </div>
                     <p className='fw-semibold text-center fs-5'>CSS</p>
                 </artice>
                 <artice className="p-lg-4 shadow-lg rounded-4 skills-skills">
-                    <legend className='skills-circle3 p-lg-5 shadow-sm'>
-                        <p className='fw-bold text-warning'>80%</p>
-                    </legend>
+                <div class="single-chart">
+                      <svg viewBox="0 0 36 36" class="circular-chart warning">
+                        <path class="circle-bg"
+                          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <path class="circle"
+                          stroke-dasharray="80, 100"
+                          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+                        />
+                        <text x="18" y="20.35" class="percentage">80%</text>
+                      </svg>
+                    </div>
                     <p className='fw-semibold text-center fs-5'>Javascript</p>
                 </artice>
             </section>

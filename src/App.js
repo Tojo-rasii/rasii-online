@@ -80,7 +80,7 @@ function App() {
       i18n.changeLanguage(lng);
       setLangueActive(lng);
       setChargement(false);
-    }, 1800);
+    }, 1500);
   };
   const { t } = useTranslation();
 
@@ -90,7 +90,9 @@ function App() {
       {chargement && 
       <div className='loading'>
         <picture>
-          <img src={svg} alt="loading" />
+        <div class="loadingio-spinner-spinner-0ntfcn671nv"><div class="ldio-iauwiiwotro">
+<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+</div></div>
         </picture>
         </div>}
         <article className='nav-4 mt-5 dark1'>
