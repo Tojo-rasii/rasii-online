@@ -11,13 +11,11 @@ import Profile from './components/Profile';
 import Loading from './components/Loading';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import svg from '../src/tools/svg/spin.svg'
 
 function App() {
   const [showButton, setShowButton] = useState(false);
   const [active, setActive] = useState(false);
   const [langueActive, setLangueActive] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
   const [chargement, setChargement] = useState(false);
 
 
