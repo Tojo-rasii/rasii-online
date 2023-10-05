@@ -90,9 +90,9 @@ function App() {
       {chargement && 
       <div className='loading'>
         <picture>
-        <div class="loadingio-spinner-spinner-0ntfcn671nv"><div class="ldio-iauwiiwotro">
-<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-</div></div>
+        <div className="progressLoad">
+          <div className="progressLoad-value"></div>
+        </div>
         </picture>
         </div>}
         <article className='nav-4 mt-5 dark1'>

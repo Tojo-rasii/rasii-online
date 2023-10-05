@@ -31,7 +31,7 @@ export class Body_Profile extends Component {
                       Antananarive
                     </p>
                   </article>
-                  <NavLink to="/cv" style={{ textDecoration: 'none' }}><p className='mt-3 text-center fs-6 me-3' id='hover-underline'><i className='bi-link fs-4' id='i-link'>&nbsp;</i>Curriculum vitae</p>  </NavLink>
+                  <NavLink to="/cv" style={{ textDecoration: 'none' }}><p className='mt-3 text-center fs-5 me-3' id='hover-underline'><i className='bi-cloud-arrow-down fs-4' id='i-link'>&nbsp;</i>Curriculum vitae</p>  </NavLink>
                 </picture>
               </article>
             </section>

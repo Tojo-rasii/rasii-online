@@ -366,7 +366,7 @@ button {
   z-index: 9999;
   text-align: center;
  background: transparent;
- backdrop-filter: brightness(90%);
+ backdrop-filter: brightness(95%);
 }
 .loading picture img{
   width: 10em;
