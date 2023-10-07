@@ -12,11 +12,12 @@ export class Body_Apropos extends Component {
             <header className='shadow-sm p-5'>
               <section className='d-flex flex-row gap-5'>
                 <article className='w-50 mt-4 me-3'>
-                  <p className='bi-info-circle fw-semibold text-gris'>&nbsp;A propos</p>
-                  <hr className='w-25 mt-0' />
-                  <p className='h1 fw-bold text-success'>L'elegance de mon portfolio</p>
-                  <p className='text-gris fw-semibold mt-3 ms-1 p-2'>là où la créativité rencontre la technologie. je suis un developpeur passionnée en conception web et en design graphique, dédiée à donner vie à vos visions numériques.</p>
-                  <NavLink to="/profile"><button className='btn btn-success fw-semibold pb-2 pt-2 mt-2'><i className='bi-person-circle fs-5'>&nbsp;</i>Voir mon profile</button></NavLink>
+                  <sub className='bi-info-circle fw-semibold text-gris fs-6'>&nbsp;A propos</sub>
+                  <hr className='w-25'/>
+                  <p className='h1 mt-3 fw-bold text-success'>
+                  Passion, créativité et design</p>
+                  <p className='text-gris fw-semibold mt-1 ms-1 p-2'>là où la créativité rencontre la technologie. je suis un developpeur passionnée en conception web et en design graphique, dédiée à donner vie à vos visions numériques.</p>
+                  <NavLink to="/profile" style={{textDecoration:"none"}}><button className='btn btn-success d-flex flex-row gap-1 fw-semibold pt-1 mt-2'><span className='bi-person-circle fs-5'>&nbsp;<span className="fs-6">Voir mon profile</span></span></button></NavLink>
                 </article>
                 <article className='d-flex justify-content-center align-items-center'>
                   <picture className='apropos-image bg-none shadow-sm p-1 rounded-1'>
@@ -26,40 +27,42 @@ export class Body_Apropos extends Component {
               </section>
             </header>
           </div>
-          <div className='main-apropos mt-2 d-flex flex-column p-3'>
-            <sub className='text-center fs-6 mb-2'>I work hard, I play hard</sub>
-            <p className='fs-1 fw-bold text-center'>Work with me</p>
-            <div className='d-flex flex-row gap-3'>
-            <section className='d-flex flex-column p-2 rounded-1 outs'>
-              <article className='bg-none p-2 rounded-5 w-25 text-center position-absolute  ms-4'><i className="bi bi-hand-thumbs-up text-primary fs-1"></i></article>
-              <article className='d-flex flex-column align-items-center text-center'>
-                <p className='text-uppercase fw-bold h3 text-primary mt-5 pt-4'>agilite</p>
-                <p className='text-gris w-75 p-1 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, minima.</p>
+          <div className='main-apropos d-flex flex-column p-3'>
+            <div className='d-flex flex-row gap-4'>
+              <section className='d-flex flex-column p-2 rounded-1 outs'>
+                <article className='icon7 ps-3 pe-3 text-center position-absolute ms-4'>
+                  <i className="bi bi-hand-thumbs-up text-primary fs-1"></i>
+                </article>
+                <article className='d-flex flex-column align-items-center text-center'>
+                  <p className='text-uppercase fw-bold h3 text-primary mt-4 pt-4'>agilite</p>
+                  <p className='text-gris w-75 p-1 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, minima.</p>
 
-              </article>
-            </section>
-            <section className='d-flex flex-column p-2 rounded-1 outs'>
-              <article className='bg-none p-2 rounded-5 w-25 text-center position-absolute ms-4'><i className="bi bi-lightning text-warning fs-1"></i></article>
-              <article className='d-flex flex-column align-items-center text-center'>
-                <p className='text-uppercase fw-bold h3 text-warning mt-5 pt-4'>rapidite</p>
-                <p className='text-gris w-75 p-1 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, minima.</p>
+                </article>
+              </section>
+              <section className='d-flex flex-column p-2 rounded-1 outs'>
+                <article className='icon8 ps-3 pe-3 text-center position-absolute ms-4'>
+                  <i className="bi bi-lightning text-warning fs-1"></i>
+                </article>
+                <article className='d-flex flex-column align-items-center text-center'>
+                  <p className='text-uppercase fw-bold h3 text-warning mt-4 pt-4'>rapidite</p>
+                  <p className='text-gris w-75 p-1 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, minima.</p>
 
-              </article>
-            </section>
-            <section className='d-flex flex-column p-2 rounded-1 outs'>
-              <article className='bg-none p-2 rounded-5 w-25 text-center position-absolute'><i className="bi bi-emoji-sunglasses text-info fs-1"></i></article>
-              <article className='d-flex flex-column align-items-center text-center'>
-                <p className='text-uppercase fw-bold h3 text-info mt-5 pt-4'>professionnalisme</p>
-                <p className='text-gris w-75 p-1 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, minima.</p>
+                </article>
+              </section>
+              <section className='d-flex flex-column p-2 rounded-1 outs'>
+                <article className='icon9 ps-3 pe-3 text-center position-absolute ms-4'><i className="bi bi-emoji-sunglasses text-info fs-1"></i></article>
+                <article className='d-flex flex-column align-items-center text-center'>
+                  <p className='text-uppercase fw-bold h3 text-info mt-4 pt-4'>professionnalisme</p>
+                  <p className='text-gris w-75 p-1 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, minima.</p>
 
-              </article>
-            </section>
+                </article>
+              </section>
             </div>
           </div>
-          <div className='footer-apropos mt-3 pb-5'>
+          <div className='footer-apropos rounded-1 shadow-sm mt-3 pb-5'>
             <section className='pt-3 ps-5'>
-              <p className='text-primary fw-semibold fs-5 text-center p_right'>Technologies langage utilisee</p>
-              <div className='div-left mt-4'>
+              <p className='fw-semibold fs-4 text-center p_right mt-2'>Mes competences</p>
+              <div className='div-left mt-4 pb-4'>
                 <article className='d-flex flex-column text-center pt-2 pb-1  langage-bg rounded-1'>
                   <picture>
                     <svg fill="#ff0000" opacity="1.0" width="70" height="70" viewBox="0 0 22 28"><path d="M17.656 9.328l.25-2.734H4.093l.734 8.344h9.562l-.344 3.563-3.078.828-3.063-.828-.203-2.188H4.967l.344 4.344 5.656 1.563h.063v-.016l5.609-1.547.781-8.5H7.357l-.234-2.828h10.531zM0 2h22l-2 22.469L10.969 27 2 24.469z" /></svg>
