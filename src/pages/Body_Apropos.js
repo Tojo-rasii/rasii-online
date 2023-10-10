@@ -35,7 +35,7 @@ export class Body_Apropos extends Component {
                 </article>
                 <article className='d-flex flex-column align-items-center text-center'>
                   <p className='text-uppercase fw-bold h3 text-primary mt-4 pt-4'>agilite</p>
-                  <p className='text-gris w-75 p-1 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, minima.</p>
+                  <p className='text-gris w-75 p-1 pb-3 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, minima.</p>
 
                 </article>
               </section>

@@ -16,6 +16,7 @@ function Body_CurriculumVitae(){
     const togg = () => {
       setActive(!active)
     }
+
     return (
       <div>
         <main className='Cv d-flex flex-row-reverse justify-content-between'>

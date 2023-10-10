@@ -55,15 +55,20 @@
 .nav-active::before {
   content: "";
   height: 2.5px;
-  width: 3em;
+  width: 0;
   background: var(--bs-danger);
   border: none;
   position: absolute;
   border-radius: 17px;
   bottom: 30%;
-  left: 51%;
+  left: 52.5%;
   transform: translateX(-50%);
   z-index: 999;
+  animation: loaders 0.3s normal forwards;
+}
+@keyframes loaders {
+  0% { width: 0; }
+  100% { width: 99%; }
 }
 .nav-active1 {
   position: relative;
@@ -74,15 +79,20 @@
 .nav-active1::before {
   content: "";
   height: 2.5px;
-  width: 3em;
+  width: 0;
   background: var(--bs-danger);
   border: none;
   position: absolute;
   border-radius: 17px;
   bottom: 30%;
-  left: 31%;
+  left: 31.8%;
   transform: translateX(-50%);
   z-index: 999;
+  animation: loade 0.3s normal forwards;
+}
+@keyframes loade {
+  0% { width: 0; }
+  100% { width: 58%; }
 }
 .nav-active2 {
   position: relative;

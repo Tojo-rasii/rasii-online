@@ -7,14 +7,14 @@ export class Body_Profile extends Component {
     return (
       <div>
         <main className='Profile'>
-          <header className='Profile-head rounded-1 p-4 pt-2'>
+          <header className='Profile-head rounded-1 pt-2'>
             <section>
               <article>
                 <picture className='Profile-img'>
                   <img src={image} alt="tojo" className='outlin mt-2 image-home shadow-sm p-2' />
                   <article className='mt-4 article-profile'>
                     <p className='fw-bold text-primary fs-5'>Tojo RASAMIMANANA</p>
-                    <p className='fw-semibold text-dark fs-6'>Web Designer</p>
+                    <p className='fw-semibold fs-6'>Web Designer</p>
                   </article>
 
                   <article className='article-location'>
@@ -31,7 +31,7 @@ export class Body_Profile extends Component {
                       Antananarive
                     </p>
                   </article>
-                  <NavLink to="/cv" style={{ textDecoration: 'none' }}><p className='mt-3 ms-1 text-center border-cv fw-semibold bg-light text-primary pt-1 pb-1 rounded-1  fs-6 pe-2'><i className='bi-cloud-arrow-down fs-5' id='i-link'>&nbsp;</i>Curriculum vitae</p>  </NavLink>
+                  <NavLink to="/cv" style={{ textDecoration: 'none' }}><p className='mt-3 ms-1 text-center border-cv fw-semibold text-primary pt-1 pb-1 rounded-1  fs-6 pe-2'><i className='bi-cloud-arrow-down fs-5' id='i-link'>&nbsp;</i>Curriculum vitae</p>  </NavLink>
                 </picture>
               </article>
             </section>
