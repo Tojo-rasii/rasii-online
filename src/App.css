@@ -20785,59 +20785,44 @@ ul {
   list-style-type: none;
 }
 
-.title-services {
-  padding-top: 3em;
-  margin-bottom: -1.7em;
-  text-align: center;
-  color: var(--bs-primary);
-}
 
-.dark-mode .title-services {
-  color: var(--bs-info);
-}
-
-.title-services::after {
-  content: "";
-  width: 2.5em;
-  background: var(--bs-primary);
-  padding: 1.5px;
-  border-radius: 17em;
-  position: absolute;
-  top: 20.7%;
-  left: 47.4%;
-}
-
-.dark-mode .title-services::after {
-  background: var(--bs-info);
-}
-
-.Services {
-  padding-top: 6em;
-  padding-left: 2em;
-  padding-right: 2em;
-  width: 100%;
+.Head-Services{
+  background: #fff;
   height: 100vh;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 2.5em;
+}
+.dark-mode .Head-Services{
+  background: #141414;
+}
+.Services {
+  margin-top: 4.6em;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 2.5em;
 }
-
+.img-service{
+  margin-top: 4.2em;
+  background: transparent;
+  filter: drop-shadow(0px 0px 1px white);
+}
 .dark-mode .Services section {
   background: var(--bs-dark);
 }
 
 .Services section {
   background: var(--bs-white);
-  width: 25vw;
-  height: 40vh;
+  width: 27.5em;
+  height: auto;
   border-radius: 0.4em;
-  padding: 8px;
-  padding-top: 1.5em;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  padding: 10px;
+  padding-top: 0.5em;
+  border: 2px solid rgba(0, 0, 0, 0.075);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1em;
-  text-align: center;
+  text-align: left;
   font-size: 0.9em;
   transition: all 0.1s;
 }
@@ -20848,7 +20833,6 @@ ul {
 }
 
 .Services section:nth-child(1):hover {
-  transform: scale(1.1);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
   background: #0d6efd;
   color: white;
@@ -20875,7 +20859,6 @@ ul {
 }
 
 .Services section:nth-child(2):hover {
-  transform: scale(1.1);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
   background: #ff0000;
   color: white;
@@ -20902,7 +20885,6 @@ ul {
 }
 
 .Services section:nth-child(3):hover {
-  transform: scale(1.1);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
   background: #0dcaf0;
   color: white;
@@ -20929,7 +20911,6 @@ ul {
 }
 
 .Services section:nth-child(4):hover {
-  transform: scale(1.1);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
   background: #ffc107;
   color: white;
@@ -20954,6 +20935,47 @@ ul {
   outline: 1px solid var(--bs-gray-200);
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
+.Services section:hover .info{
+  color: auto;
+}
+.info{
+  background-color: #fff;
+  margin-left: 13.7em;
+  margin-top: -3.5em;
+}
+.dark-mode .info{
+  background-color: #141414;
+}
+
+/* dialog */
+.dialog-1{
+  height: 10%;
+  width: 21%;
+  background-color: var(--bs-gray-200);
+  position: absolute;
+  border-radius: 0.9em;
+  top: 14%;
+  left: 25.8%;
+}
+.dark-mode .dialog-1{
+  background-color: var(--bs-dark-text-emphasis);
+}
+
+.left-point{
+width: 0;
+height: 0;
+border-left: 1.5vh solid transparent;
+border-right: 1.5vh solid transparent;
+border-top: 7vh solid var(--bs-gray-200);
+position: absolute;
+top: 45%;
+left: -7%;
+transform: rotate(60deg);
+}
+.dark-mode .left-point{
+  border-top: 7vh solid var(--bs-dark-text-emphasis);
+}
+
 
 .Cv {
   padding-top: 6em;

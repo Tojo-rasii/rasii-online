@@ -1,10 +1,20 @@
 import React, { Component } from 'react'
+import service from '../tools/image/service.png'
 
 export class Body_Services extends Component {
   render() {
     return (
-      <div>
-        <p className='h2 fw-bold title-services'>MES SERVICES</p>
+      <div className='Head-Services'>
+        <div className='d-flex flex-row justify-content-between'>
+        <main>
+          <picture>
+            <img src={service} alt="service" className='img-service' style={{width: "17em", height: "auto"}}/>
+          </picture>
+          <div class="dialog-1">
+				<div class="left-point"></div>
+        <p className='m-2 ms-4'>Lorem, ipsum dolor sit amet consectetur adipisicing?</p>
+			</div>
+        </main>
         <main className='Services'>
             <section>
                 <article>
@@ -13,8 +23,9 @@ export class Body_Services extends Component {
           </svg></picture>
                 </article>
                 <article>
-                    <p className='h5'>Developpement front-end</p>
-                 
+                <p className='h5 mt-4'>Developpement front-end</p>
+                <p className='d-none'>Le développement front-end, également connu sous le nom de développement côté client, consiste à créer l'interface utilisateur d'une application ou d'un site web. Cela englobe la conception, la mise en page et la programmation des éléments visibles que les utilisateurs voient et avec lesquels ils interagissent, offrant ainsi une expérience utilisateur optimale et conviviale.</p>
+                <i className='bi-info-circle info mb-5 pe-1 ps-1 rounded-1 fs-5 position-absolute'></i>
                 </article>
             </section>
             <section>
@@ -25,8 +36,9 @@ export class Body_Services extends Component {
           </svg></picture>
                 </article>
                 <article>
-                <p className='h5'>Logo design</p>
-           
+                <p className='h5 mt-4'>Logo design</p>
+                <p className='d-none'>Le logo design est le processus créatif de conception et de création d'un symbole graphique unique qui représente une entreprise, une marque ou une organisation. Il vise à transmettre l'identité, les valeurs et les objectifs de l'entité, tout en étant mémorable et reconnaissable pour le public cible.</p>
+                <i className='bi-info-circle info mb-5 pe-1 ps-1 rounded-1 fs-5 position-absolute'></i>
                 </article>
             </section>
             <section>
@@ -36,8 +48,9 @@ export class Body_Services extends Component {
           </svg></picture>
                 </article>
                 <article>
-                <p className='h5'>Conception design UI/UX</p>
-                
+                <p className='h5 mt-4'>Conception design UI/UX</p>
+                <p className='d-none'>La conception UI (User Interface) se concentre sur l'apparence visuelle et l'interaction des éléments d'une interface, tandis que la conception UX (User Experience) vise à créer une expérience globale positive pour les utilisateurs en prenant en compte leur satisfaction, leur facilité d'utilisation et leur efficacité lors de l'interaction avec un produit ou une application.</p>
+                <i className='bi-info-circle info mb-5 pe-1 ps-1 rounded-1 fs-5 position-absolute'></i>
                 </article>
             </section>
             <section>
@@ -48,11 +61,13 @@ export class Body_Services extends Component {
           </svg></picture>
                 </article>
                 <article>
-                <p className='h5'>Responsive mobile</p>
-               
+                <p className='h5 mt-4'>Responsive mobile</p>
+                <p className='d-none'>Le responsive mobile est une approche de conception de sites web qui permet à une page web de s'adapter de manière fluide et optimale à différents types d'appareils mobiles, offrant ainsi une expérience utilisateur exceptionnelle sur smartphones et tablettes.</p>
+                <i className='bi-info-circle info mb-5 pe-1 ps-1 rounded-1 fs-5 position-absolute'></i>
                 </article>
             </section>
         </main>
+        </div>
       </div>
     )
   }
