@@ -20806,6 +20806,21 @@ ul {
   margin-top: 4.2em;
   background: transparent;
   filter: drop-shadow(0px 0px 1px white);
+  z-index: 999999;
+}
+.dark-mode #para-strock{
+  color:#222222;
+  opacity:0.4;
+}
+#para-strock{
+  font-size: 8em; /* Adjust the font size as needed */
+  font-weight: bold; 
+  -webkit-text-stroke: 3px var(--bs-gray-500); 
+  color:var(--bs-gray-400);
+  position:absolute;
+  top:60%;
+  left: 6%;
+  opacity:0.6;
 }
 .dark-mode .Services section {
   background: var(--bs-dark);

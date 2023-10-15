@@ -63,20 +63,20 @@ export class Body_Profile extends Component {
                     </div>
 
                     <div class="single-chart">
-                      <svg viewBox="0 0 36 36" class="circular-chart info">
+                    <svg viewBox="0 0 36 36" class="circular-chart orange">
                         <path class="circle-bg"
                           d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
           a 15.9155 15.9155 0 0 1 0 -31.831"
                         />
                         <path class="circle"
-                          stroke-dasharray="70, 100"
+                          stroke-dasharray="80, 100"
                           d="M18 2.0845
           a 15.9155 15.9155 0 0 1 0 31.831
           a 15.9155 15.9155 0 0 1 0 -31.831"
                         />
                       </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" className="bi bi-heart-fill" id='loyal' viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" fill="currentColor" className="bi bi-heart-fill" id='loyal' viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                       </svg>
                       <p className='ms-4'>Loyal <span className='fw-bold text-info'>+70</span></p>

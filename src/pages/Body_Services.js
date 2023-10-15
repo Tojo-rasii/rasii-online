@@ -8,7 +8,9 @@ export class Body_Services extends Component {
         <div className='d-flex flex-row justify-content-between'>
         <main>
           <picture>
+            <p id='para-strock'>SERVICES</p>
             <img src={service} alt="service" className='img-service' style={{width: "17em", height: "auto"}}/>
+            
           </picture>
           <div class="dialog-1">
 				<div class="left-point"></div>
