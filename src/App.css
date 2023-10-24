@@ -20790,7 +20790,7 @@ ul {
   background: #fff;
   height: 100vh;
   padding-left: 10em;
-  padding-right: 10em;
+  padding-right: 8em;
   padding-top: 2.5em;
 }
 .dark-mode .Head-Services{
@@ -20840,6 +20840,8 @@ ul {
   text-align: left;
   font-size: 0.9em;
   transition: all 0.1s;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .Services section:nth-child(1) {
@@ -20851,6 +20853,7 @@ ul {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
   background: #0d6efd;
   color: white;
+  transform: scale(1.1);
 }
 
 .picture {
@@ -20877,6 +20880,7 @@ ul {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
   background: #ff0000;
   color: white;
+  transform: scale(1.1);
 }
 
 .picture1 {
@@ -20903,6 +20907,7 @@ ul {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
   background: #0dcaf0;
   color: white;
+  transform: scale(1.1);
 }
 
 .picture2 {
@@ -20929,6 +20934,7 @@ ul {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
   background: #ffc107;
   color: white;
+   transform: scale(1.1);
 }
 
 .picture3 {
@@ -20953,15 +20959,6 @@ ul {
 .Services section:hover .info{
   color: auto;
 }
-.info{
-  background-color: #fff;
-  margin-left: 13.7em;
-  margin-top: -3.5em;
-}
-.dark-mode .info{
-  background-color: #141414;
-}
-
 /* dialog */
 .dialog-1{
   height: 10%;
@@ -20993,18 +20990,25 @@ transform: rotate(60deg);
 
 
 .Cv {
-  padding-top: 6em;
+  padding-top: 4em;
   padding-right: 3em;
+  background: #fff;
   width: 100%;
   height: 100vh;
 }
-
+.dark-mode .Cv{
+  background: #181818;
+}
+.dark-mode .Cv section{
+  background: #141414;
+}
 .Cv section {
   background: var(--bs-light);
   width: auto;
   height: 22vh;
   border-radius: 5px;
   margin: 2em;
+  text-align: center;
 }
 
 .dark-mode .Cv section article:nth-child(2) div {
@@ -21034,7 +21038,8 @@ transform: rotate(60deg);
   padding-right: 0.5em;
   display: block;
   position: absolute;
-  margin-left: 0.4em;
+  margin-left: 6.4em;
+  top: 38%;
 }
 
 .Cv section article:nth-child(2) div div:nth-child(1) {
@@ -21054,7 +21059,17 @@ transform: rotate(60deg);
   color: red;
   background: white;
 }
-
+#curri-photo{
+  width: 25.5em;
+  height: auto;
+  object-fit: fill;
+  margin-top: -0.4em;
+  padding: 1.3em;
+  background: var(--bs-light);
+}
+.dark-mode #curri-photo{
+  background: #141414;
+}
 .Apropos {
   padding-top: 4.6em;
 }
@@ -21075,6 +21090,12 @@ transform: rotate(60deg);
   background: var(--bs-white);
   width: 100%;
   height: 100vh;
+}
+
+#contact{
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content:space-between;
 }
 
 .span {
@@ -21710,7 +21731,7 @@ body::-webkit-scrollbar-track {
 }
 
 .langage-bg:nth-child(4):hover {
-  outline: 2px solid var(--bs-pink);
+  outline: 2px solid var(--bs-purple);
 }
 
 .langage-bg:nth-child(5):hover,.langage-bg:nth-child(6):hover {

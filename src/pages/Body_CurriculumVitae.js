@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import curriculum from '../tools/image/curii-v.jpg'
 
 function Body_CurriculumVitae(){
   const [active, setActive] = useState(false);
@@ -19,13 +20,18 @@ function Body_CurriculumVitae(){
 
     return (
       <div>
-        <main className='Cv d-flex flex-row-reverse justify-content-between'>
-            <section className='p-4 shadow-lg rounded-3'>
+        <main className='Cv d-flex flex-row-reverse justify-content-around'>
+          <section>
+            <picture>
+              <img src={curriculum} alt="curriculum" id='curri-photo'/>
+            </picture>
+          </section>
+            <section className='p-4 rounded-1 w-50'>
                <article>
-                <p className='fs-4 fw-bold'>Curriculum Vitae</p>
+                <p className='fs-6 w-75 ms-5 mt-3'>Mon Curriculum Vitae est disponible en téléchargement direct pour en savoir plus sur mon parcours.</p>
                 </article>
                <article>
-                <button className='d-flex flex-row gap-2 rounded-5 shadow-lg text-white mt-2 ms-2 pt-2 pb-2 pe-4' onClick={togg}><i className='bi-download ms-3'></i>Telecharger <i className='bi-caret-down-fill'></i></button>
+                <button className='d-flex flex-row gap-2 rounded-5 text-white pe-3' style={{marginTop: "1em",marginLeft : "12.5em", position: "absolute"}} onClick={togg}><i className='bi-cloud-arrow-down-fill fs-3 ms-2'></i><span className='mt-2'>Telecharger</span><i className='bi-caret-down mt-2 fs-7'></i></button>
                 <div className='rounded-2 mt-0' style={{ display: active ? "block" : "none" }}>
                 <div className='d-flex flex-row gap-1' onClick={download}>
                 <span>

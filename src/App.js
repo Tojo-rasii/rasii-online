@@ -40,6 +40,7 @@ function App() {
   //dark-mode
   const [isDarkMode, setIsDarkMode] = useState(false);
   useEffect(() => {
+    const isDarkMode = localStorage.getItem("darkMode") === 'enabled';
     //body all
     const body = document.body;
     const div = document.querySelector('div');
@@ -52,11 +53,13 @@ function App() {
       moon.style.display = "none";
       sun.style.display = "block";
       div.classList.add('dark-mode1');
+      localStorage.setItem('darkMode','disabled');
     } else {
       body.classList.remove('dark-mode');
       moon.style.display = "block";
       sun.style.display = "none";
       div.classList.remove('dark-mode1');
+      localStorage.setItem('darkMode','enabled');
     }
   }, [isDarkMode]);
 

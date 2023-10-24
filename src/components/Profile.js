@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import Navbar from '../pages/Navbar'
 import Body_Profile from '../pages/Body_Profile'
 import { useState, useEffect } from 'react';
-import Skeleton_Profile from '../pages/Skeleton_Profile';
-import Loading_profiles from '../pages/Loading_profiles';
 import Skeleton_Loading from '../pages/Skeleton_Loading';
 
 function Profile() {

@@ -36,11 +36,11 @@ function Body_home() {
                 <div className='name'><p className='h2 fw-bold'>Tojo_RASAMIMANANA</p></div>
               </article>
             </section>
-            <p className='text-gris fw-semibold mt-1 w-75'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, porro.
+            <p className='text-gris fw-semibold mt-1 w-75'>un developpeur front-end, un passione du web. travailleur independant
             </p>
             <section className='d-flex flex-row gap-2'>
               <NavLink to="/profile"><button className='btn btn-danger fw-semibold rounded-1'>{t("know")}</button></NavLink>
-              <NavLink to="/exploits"><button className='btn btn1 fw-semibold border-1 rounded-1'>{t("exploit")}</button></NavLink>
+              <NavLink to="/"><button className='btn btn1 fw-semibold border-1 rounded-1'>{t("exploit")}</button></NavLink>
             </section>
           </article>
         </section>

@@ -14,7 +14,7 @@ export class Body_Profile extends Component {
                   <img src={image} alt="tojo" className='outlin mt-2 image-home shadow-sm p-2' />
                   <article className='mt-4 article-profile'>
                     <p className='fw-bold text-primary fs-5'>Tojo RASAMIMANANA</p>
-                    <p className='fw-semibold fs-6'>Web Designer</p>
+                    <p className='fw-semibold fs-6'>Developpeur web</p>
                   </article>
 
                   <article className='article-location'>
@@ -37,7 +37,7 @@ export class Body_Profile extends Component {
             </section>
             <section className='Profile-content d-flex flex-column gap-0'>
               <article className=''>
-                <p className='fw-semibold fs-5 text-primary content-profile'>Description<br /><p className='fs-6 text-gris fw-normal p-2 rounded-1'>je suis un web designer autodidacte passionné par la création de sites web modernes et esthétiquement plaisants.<br />Mon parcours en tant qu' autodidacte témoigne de ma détermination à constamment améliorer mes compétences et à rester à la pointe des dernières technologies et tendances</p></p>
+                <p className='fw-semibold fs-5 text-primary content-profile'>Description<br /><p className='fs-6 text-gris fw-normal p-2 rounded-1'>je suis un Developpeur web autodidacte passionné par la création de sites web modernes et esthétiquement plaisants.<br />Mon parcours en tant qu' autodidacte témoigne de ma détermination à constamment améliorer mes compétences et à rester à la pointe des dernières technologies et tendances</p></p>
                 <div className='footer-profile'>
                   <p className='fw-semibold fs-5 mt-4 text-primary'>Personnalite</p>
                   <div class="flex-wrapper">

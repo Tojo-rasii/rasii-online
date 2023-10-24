@@ -28,7 +28,7 @@ function Footer_home() {
       <div>
         <main className="Footer-contact shadow-sm rounded-1 p-4 mb-3">
          <h2>Contact</h2>
-         <section className='d-flex flex-row-reverse justify-content-between ' id='contact'>
+         <section id='contact'>
             <article>
             <footer className='d-flex justify-content-center mb-5'>
             <section className='mt-5 ms-5 d-flex flex-column'>
@@ -59,7 +59,7 @@ function Footer_home() {
             </section>
         </footer>
             </article>
-            <article>
+            <article id='icon-mobile'>
                 <ul className='d-flex flex-column gap-4 ul-contact'>
                     <li><i className='bi-github fs-2'></i>&nbsp; Tojo_Rasii</li>
                     <li><i className='bi-linkedin fs-2 text-primary-emphasis'></i>&nbsp; Tojo RASAMIMANANA</li>
