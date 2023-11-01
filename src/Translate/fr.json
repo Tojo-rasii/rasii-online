@@ -1,13 +1,13 @@
 {
   "home": "Accueil",
   "service": "Services",
-  "about": "A propos",
+  "about": "À propos",
   "project": "Projets",
-  "welcome": "Bienvenue a vous, je suis",
+  "welcome": "Bienvenue à vous, je suis",
   "know":"En savoir plus",
   "exploit":"Voir mes projets",
   "offre":"Mes offres services",
-  "skills":"Mes competences",
+  "skills":"Mes compétences ",
   "dashboard":"Tableau de bord CV",
   "loading":"Chargement..."
 }

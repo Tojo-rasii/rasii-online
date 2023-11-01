@@ -14,7 +14,7 @@ export class Body_Services extends Component {
           </picture>
           <div class="dialog-1">
 				<div class="left-point"></div>
-        <p className='m-2 ms-4'>Lorem, ipsum dolor sit amet consectetur adipisicing?</p>
+        <p className='m-2 ms-4'>Ma priorité absolue est d'offrir des solutions innovantes pour répondre à vos besoins spécifiques.</p>
 			</div>
         </main>
         <p className='services-title'>Mes Services</p>

@@ -32,7 +32,7 @@ function Footer_home() {
             <article>
             <footer className='d-flex justify-content-center mb-5'>
             <section className='mt-5 ms-5 d-flex flex-column'>
-                <article className='text-center'>
+                <article className='text-lign'>
                     <picture className='d-flex flex-row gap-2 stars'>
                         <i className='bi-star-fill fs-5 text-warning'></i>
                         <i className='bi-star-fill fs-5 text-warning'></i>

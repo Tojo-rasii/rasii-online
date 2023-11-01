@@ -10,9 +10,9 @@ export class Body_Apropos extends Component {
         <main className='Apropos'>
           <div className='header-apropos'>
             <header className='shadow-sm p-5'>
-              <section className='d-flex flex-row gap-5'>
-                <article className='w-50 mt-4 me-3'>
-                  <sub className='bi-info-circle fw-semibold text-gris fs-6'>&nbsp;A propos</sub>
+              <section>
+                <article className='article-text'>
+                  <sub className='bi-info-circle fw-semibold text-gris fs-6'>&nbsp;À propos</sub>
                   <hr className='w-25'/>
                   <p className='h1 mt-3 fw-bold text-success'>
                   Passion, créativité et design</p>
@@ -28,14 +28,14 @@ export class Body_Apropos extends Component {
             </header>
           </div>
           <div className='main-apropos d-flex flex-column p-3'>
-            <div className='d-flex flex-row gap-4'>
+            <div>
               <section className='d-flex flex-column p-2 rounded-1 outs'>
                 <article className='icon7 ps-3 pe-3 text-center position-absolute ms-4'>
                   <i className="bi bi-hand-thumbs-up text-primary fs-1"></i>
                 </article>
                 <article className='d-flex flex-column align-items-center text-center'>
-                  <p className='text-uppercase fw-bold h3 text-primary mt-4 pt-4'>agilite</p>
-                  <p className='text-gris w-75 p-1 pb-3 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, minima.</p>
+                  <p className='text-uppercase fw-bold h3 text-primary mt-4 pt-4'>AGILITÉ</p>
+                  <p className='text-gris p-1 w-75 pb-3 fw-semibold'>Découvrez comment mon agilité me permet de rester en tête de la course et d'atteindre l'excellence dans tout ce que j'entreprend.</p>
 
                 </article>
               </section>
@@ -43,9 +43,9 @@ export class Body_Apropos extends Component {
                 <article className='icon8 ps-3 pe-3 text-center position-absolute ms-4'>
                   <i className="bi bi-lightning text-warning fs-1"></i>
                 </article>
-                <article className='d-flex flex-column align-items-center text-center'>
-                  <p className='text-uppercase fw-bold h3 text-warning mt-4 pt-4'>rapidite</p>
-                  <p className='text-gris w-75 p-1 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, minima.</p>
+                <article className='d-flex flex-column align-items-center'>
+                  <p className='text-uppercase fw-bold h3 text-warning mt-4 pt-4'>RAPIDITÉ</p>
+                  <p className='text-gris w-75 p-1 fw-semibold text-center'>Avec ma méthodologie agile éprouvée, je suis prêts à relever tous les défis et à livrer des résultats exceptionnels dans les délais les plus courts.</p>
 
                 </article>
               </section>
@@ -53,7 +53,7 @@ export class Body_Apropos extends Component {
                 <article className='icon9 ps-3 pe-3 text-center position-absolute ms-4'><i className="bi bi-emoji-sunglasses text-info fs-1"></i></article>
                 <article className='d-flex flex-column align-items-center text-center'>
                   <p className='text-uppercase fw-bold h3 text-info mt-4 pt-4'>professionnalisme</p>
-                  <p className='text-gris w-75 p-1 fw-semibold'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, minima.</p>
+                  <p className='text-gris w-75 p-1 fw-semibold'>Explorez mon site pour en apprendre d'avantage sur mon engagement envers l'excellence professionnelle et comment je peux répondre à vos besoins.</p>
 
                 </article>
               </section>
@@ -61,7 +61,7 @@ export class Body_Apropos extends Component {
           </div>
           <div className='footer-apropos rounded-1 shadow-sm mt-3 pb-5'>
             <section className='pt-3 ps-5'>
-              <p className='fw-semibold fs-4 text-center p_right mt-2'>Mes competences</p>
+              <p className='fw-semibold fs-4 text-center p_right mt-2'>Mes compétences</p>
               <div className='div-left mt-4 pb-4'>
                 <article className='d-flex flex-column text-center pt-2 pb-1  langage-bg rounded-1'>
                   <picture>

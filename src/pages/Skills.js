@@ -89,8 +89,8 @@ function Skills(){
                  <article className='skills-article'>
                     <p className='mt-5'>{t("skills")}</p>
                     <hr className='w-25' />
-                    <p className='h3 fw-bold'>La beaute du langage <br /><span className='h1 fw-bold mt-1'>l'Elegance du design</span></p>
-                    <p className='text-gris fw-semibold mt-4 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatibus consequatur dolores eligendi cumque. Dolore harum nihil consectetur minima eius.</p>
+                    <p className='h3 fw-bold'>La beauté du langage <br /><span className='h1 fw-bold mt-1'>L'élégance du design</span></p>
+                    <p className='text-gris fw-semibold mt-4 '>Fort de mes compétences et de mon expertise, je suis en mesure de résoudre des défis complexes et de fournir des solutions innovantes pour répondre aux besoins de mes clients</p>
                     <NavLink to="/cv"><button className='btn btn-danger p-lg-2 rounded-1 shadow-sm mt-4'>{t("dashboard")}</button></NavLink>
                  </article>
             </section>

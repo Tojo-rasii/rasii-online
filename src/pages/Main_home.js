@@ -15,7 +15,7 @@ function Main_home(){
           </svg></picture>
                 </legend>
                 <p className='services-para h4'>Developpement front-end</p>
-                <p className=' text-gris fw-semibold mt-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore.</p>
+                <p className=' text-gris fw-semibold mt-3'>Créer une interface utilisateur réactive est essentielle pour offrir une expérience utilisateur exceptionnelle.</p>
             </article>
             <article className='mb-4 services-article1'>
 <legend>
@@ -25,7 +25,7 @@ function Main_home(){
           </svg></picture>
 </legend>
 <p className='services-para1 h5'>Logo design</p>
-<p className=' text-gris fw-semibold mt-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore.</p>
+<p className=' text-gris fw-semibold mt-3'>Un design captivant qui communique votre message en un seul coup d'œil.</p>
             </article>
             <article className='mb-4 services-article2'>
             <legend>
@@ -34,7 +34,7 @@ function Main_home(){
           </svg></picture>
             </legend>
             <p className='services-para2 h4'>Conception design UI/UX</p>
-            <p className=' text-gris fw-semibold mt-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore.</p>
+            <p className=' text-gris fw-semibold mt-3'>Créer une expérience utilisateur exceptionnelle mettant en valeur la simplicité, la convivialité et l'esthétique.</p>
             </article>
             <article className='mb-4 services-article3'>
             <legend>
@@ -44,7 +44,7 @@ function Main_home(){
           </svg></picture>
             </legend>
             <p className='services-para3 h4'>Responsive mobile</p>
-            <p className=' text-gris fw-semibold mt-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, inventore.</p>
+            <p className=' text-gris fw-semibold mt-3'>Adapter les contenus et les images sur tous les appareils, du smartphone à la tablette.</p>
             </article>
         </section>
       </main>

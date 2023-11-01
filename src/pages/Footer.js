@@ -20,13 +20,13 @@ export class Footer extends Component {
                 <strong class="fs-5 para-danger para-line">Lien actif</strong>
                     <NavLink style={{textDecoration:'none'}} to="/services"><p className='mt-3'>Services offerts</p></NavLink>
                     <NavLink style={{textDecoration:'none'}} to="/apropos"><p>Informations sur le site</p></NavLink>
-                    <NavLink style={{textDecoration:'none'}} to="/contact"><p>Tous les coordonnees</p></NavLink>
+                    <NavLink style={{textDecoration:'none'}} to="/contact"><p>Toutes les coordonnées.</p></NavLink>
                     </article>
                     <article>
                 <strong class="fs-5 para-danger para-line">Portfolio</strong>
                     <NavLink style={{textDecoration:'none'}} to="/cv"><p className='mt-3'>Mon Curriculum vitae</p></NavLink>
                     <NavLink style={{textDecoration:'none'}} to="/profile"><p>Mon profile</p></NavLink>
-                    <NavLink style={{textDecoration:'none'}} to="/exploits"><p>Mes exploits</p></NavLink>
+                    <NavLink style={{textDecoration:'none'}} to="/"><p>Mes projets</p></NavLink>
                     </article>
                     <article className="d-flex gap-2" id='icon-mobile'>
                         <i className='bi bi-facebook fs-2 para-danger'></i>

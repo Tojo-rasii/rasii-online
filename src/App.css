@@ -8661,6 +8661,9 @@ fieldset:disabled .btn {
   width: 50% !important;
 }
 
+.w-60 {
+  width: 60% !important;
+}
 .w-75 {
   width: 75% !important;
 }
@@ -20591,6 +20594,12 @@ Link {
 
 .main-apropos section {
   background: var(--bs-white);
+  width: 35em;
+}
+
+
+.main-apropos section article p:nth-child(2){
+  font-size: 1em;
 }
 .icon7, .icon8, .icon9{
   background: var(--bs-white);
@@ -20962,12 +20971,12 @@ ul {
 /* dialog */
 .dialog-1{
   height: 10%;
-  width: 21%;
+  width: 31%;
   background-color: var(--bs-gray-200);
   position: absolute;
   border-radius: 0.9em;
   top: 14%;
-  left: 25.8%;
+  left: 24.5%;
 }
 .dark-mode .dialog-1{
   background-color: var(--bs-dark-text-emphasis);
@@ -20981,7 +20990,7 @@ border-right: 1.5vh solid transparent;
 border-top: 7vh solid var(--bs-gray-200);
 position: absolute;
 top: 45%;
-left: -7%;
+left: -5%;
 transform: rotate(60deg);
 }
 .dark-mode .left-point{
@@ -21074,13 +21083,35 @@ transform: rotate(60deg);
   padding-top: 4.6em;
 }
 .dark-mode .Apropos{
-  height: 205vh;
+  height:210vh;
 }
 
 .Apropos div header {
   background: var(--bs-white);
   border-radius: 3px;
   height: 78vh;
+}
+
+.Apropos div header section{
+  display: flex;
+  flex-direction: row;
+  gap: 5rem !important;
+}
+
+.Apropos div header section article:nth-child(1){
+  width: 50% !important;
+}
+
+.article-text{
+  margin-top: 3rem;
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+
+.main-apropos div{
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem !important;
 }
 
 .Contact {
@@ -21307,7 +21338,7 @@ transform: rotate(60deg);
 
 .article-profile p:nth-child(2) {
   margin-top: -0.8em;
-  margin-left: 3em;
+  margin-left: 1.5em;
   color: var(--bs-dark);
 }
 .dark-mode .article-profile p:nth-child(2){
@@ -21331,7 +21362,7 @@ transform: rotate(60deg);
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
-  margin-left: 3.5em;
+  margin-left: 2.7em;
   padding-bottom: 20px;
 }
 
@@ -21850,6 +21881,8 @@ body::-webkit-scrollbar-track {
 }
 
 .SK-Nav-section {
+  display: flex;
+  flex-direction: row;
   width: 50%;
   background: silver;
   border-radius: 1em;
