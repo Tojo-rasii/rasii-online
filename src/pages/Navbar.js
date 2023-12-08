@@ -38,8 +38,13 @@ function Navbar() {
               <NavLink to="/" style={{ textDecoration: 'none' }} className={(nav) => (nav.isActive ? "nav-active" : "")}><article>
                 <p>{t("home")}</p>
               </article></NavLink>
+              
               <NavLink to="/Services" style={{ textDecoration: 'none' }} className={(nav) => (nav.isActive ? "nav-active" : "")}><article>
                 <p >{t("service")}</p>
+              </article></NavLink>
+
+              <NavLink to="/projets" style={{ textDecoration: 'none' }} className={(nav) => (nav.isActive ? "nav-active" : "")}><article>
+                <p>{t("project")}</p>
               </article></NavLink>
 
               <NavLink to="/apropos" style={{ textDecoration: 'none' }} className={(nav) => (nav.isActive ? "nav-active1" : "")}><article className='nav-about'>

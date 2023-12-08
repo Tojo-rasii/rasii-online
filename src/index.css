@@ -150,9 +150,9 @@
 #nav_pc {
   display: block;
 }
-
+/* 640 */
 /* mobile */
-@media (max-width:640px) {
+@media (max-width:768px) {
   body {
     overflow-x: hidden;
   }

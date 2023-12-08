@@ -11,6 +11,7 @@ import Profile from './components/Profile';
 import Loading from './components/Loading';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import Projets from './components/Projets';
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -118,6 +119,7 @@ function App() {
             <Route path="/" element={<Accueil />} />
             <Route path="/services" element={<Services />} />
             <Route path="/apropos" element={<Apropos />} />
+            <Route path="/projets" element={<Projets />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/cv" element={<Curriculum_Vitae />} />
             <Route path="/exploits" element={<Exploits />} />
