@@ -146,6 +146,11 @@
 .nav_mobile {
   display: none;
 }
+.navbarMobile{
+  width: 100%;
+  background: #fff;
+  position: fixed;
+}
 
 #nav_pc {
   display: block;

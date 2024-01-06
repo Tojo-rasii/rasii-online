@@ -40,7 +40,7 @@ function Body_home() {
             </p>
             <section className='d-flex flex-row gap-2'>
               <NavLink to="/profile"><button className='btn btn-danger fw-semibold rounded-1'>{t("know")}</button></NavLink>
-              <NavLink to="/"><button className='btn btn1 fw-semibold border-1 rounded-1'>{t("exploit")}</button></NavLink>
+              <NavLink to="/projets"><button className='btn btn1 fw-semibold border-1 rounded-1'>{t("exploit")}</button></NavLink>
             </section>
           </article>
         </section>

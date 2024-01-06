@@ -1,4 +1,5 @@
 import './App.css';
+import './tools/styles/responsive.css';
 import { React, useState } from 'react'
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Accueil from './components/Accueil';

@@ -1,0 +1,37 @@
+/*-----------------------------------*\
+  #RESPONSIVE
+\*-----------------------------------*/
+
+/**
+ * responsive larger than 150px screen
+ */
+
+ @media (min-width: 150px) {
+    
+  }
+  
+  /**
+   * responsive larger than 450px screen
+   */
+  
+  @media (min-width: 450px) {
+      
+  }
+  
+  /**
+   * responsive larger than 580px screen
+   */
+  
+  @media (min-width: 580px) {}
+  
+  /**
+   * responsive larger than 768px screen
+   */
+  
+  @media (min-width: 768px) {
+  
+  }
+  
+  @media (min-width: 1024px) {
+   
+  }

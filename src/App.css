@@ -21120,7 +21120,7 @@ ul {
 }
 
 .dark-mode .Apropos {
-  height: 210vh;
+  height: 214vh;
 }
 
 .Apropos div header {
@@ -21559,7 +21559,7 @@ ul {
   }
 }
 
-.cv-foot{
+.cv-foot {
   cursor: pointer;
 }
 
@@ -22315,4 +22315,121 @@ body::-webkit-scrollbar-track {
   height: 92vh;
   border-radius: 0.5em;
   padding: 1em;
+}
+
+/* PROJECT */
+.Projets{
+  height: 100vh;
+}
+.dark-mode .Projets{
+  background: #141414;
+  height: max-content;
+  padding-bottom: 1.6em;
+}
+.Projets main div{
+  background: #fff;
+}
+.dark-mode .Projets main div{
+  background: #141414;
+}
+.projetArticle{
+  background: #fff;
+  width: 27vw;
+  height: 33.5vw;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.projetArticle:hover{
+  background: var(--bs-light-bg-subtle);
+}
+.projetArticle:active{
+  scale: 0.9;
+}
+.dark-mode .projetArticle{
+  background: #181818;
+  outline: 2px solid  #212529;
+}
+.para-desc{
+  height: 8vh;
+  overflow: hidden;
+  margin-top: -0.4em;
+}
+/* PAGE BUTTON PAGGINATION */
+.pagination {
+  display: flex;
+  flex: row;
+  gap: 0.5em;
+  margin-top: 0.2em;
+}
+
+.pagination button{
+  border-radius: 50%;
+  border: none;
+  outline: 1.5px solid silver;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+.pagination button:first-child{
+  position: absolute;
+  top: 40%;
+  left: -1%;
+  font-size: 3.5em;
+}
+.pagination button:last-child{
+  position: absolute;
+  top: 40%;
+  left: 91.5%;
+  font-size: 3.5em;
+}
+.pagination button:is(:first-child, :last-child){
+  background: none;
+  outline: none;
+  cursor: default;
+  color: var(--bs-info);
+}
+.pagination button:is(:first-child, :last-child) i{
+  cursor: pointer;
+}
+.pagination button:is(:first-child, :last-child).active-page{
+ background: none;
+ border: none;
+}
+
+/* .pagination button{
+  color: var(--bs-primary);
+} */
+.pagination button:is(:disabled) {
+  outline: none;
+  cursor: default;
+  color: silver;
+}
+.pagination button:is(:disabled) i{
+  cursor: default;
+}
+
+.pagination button:first-child:focus, button:last-child:focus {
+  color: var(--bs-info);
+}
+.pagination button:nth-child(2):focus {
+  background: var(--bs-primary);
+  /* outline: 2px solid var(--bs-primary); */
+  border: none;
+  color: #fff;
+}
+.pagination button:nth-child(3):focus {
+  background: var(--bs-primary);
+  /* outline: 2px solid var(--bs-primary); */
+  border: none;
+  color: #fff;
+}
+
+.active-page{
+  background: var(--bs-primary);
+  color: var(--bs-white);
+  /* outline: 2px solid var(--bs-primary); */
+  font-weight: bold;
 }

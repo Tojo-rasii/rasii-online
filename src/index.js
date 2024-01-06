@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './tools/styles/responsive.css';
 import App from './App';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './tools/i18n';
