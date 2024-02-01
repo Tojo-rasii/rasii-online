@@ -201,6 +201,8 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  width: 100% !important;
+  overflow-x: hidden !important;
 }
 
 hr {
@@ -20365,7 +20367,7 @@ input {
 
 
 /* Personnalisez les styles de Bootstrap pour le mode sombre si nécessaire */
-.dark-mode .navbar {
+.dark-mode .naavbar {
   background-color: #181818;
   transition: 0.2s;
   border-bottom: 0.5px solid var(--bs-dark-text-emphasis);
@@ -21213,7 +21215,7 @@ ul {
   padding-right: 1.8em;
   border-width: 4px;
   border-radius: 50%;
-  margin-left: 0.6em;
+  margin-left: 0.3em;
 }
 
 .para-T {
@@ -21392,11 +21394,22 @@ ul {
   padding-top: 1em;
   border-radius: 0.6em;
 }
-
+.article-location p{
+  overflow:hidden;
+  width:15vw;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+#profile-email{
+  cursor: pointer;
+}
+#profile-email:hover{
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .dark-mode .article-location {
   background: none;
 }
-
 .Profile-head {
   background: none;
   display: flex;
@@ -21695,7 +21708,7 @@ ul {
 
 /* IMAGE */
 .section-home2 picture {
-  margin-left: 30em;
+  margin-left: 30em !important;
   padding: 7em;
   padding-top: 15em;
   overflow: hidden;
@@ -21706,8 +21719,8 @@ ul {
   transform: scale(91%);
   object-fit: cover;
   z-index: 999;
-  margin-top: -3.2em;
-  margin-left: 40em;
+  margin-top: -3.2em !important;
+  margin-left: 40em !important;
   border-bottom-right-radius: 40%;
   border-bottom-left-radius: 65.5%;
 }
@@ -21753,10 +21766,19 @@ ul {
 }
 
 /* NAVBAR */
-.navbar {
+.naavbar {
+  background: var(--bs-white);
+  width: 100%;
+  position: fixed !important;
+  margin-top: -3.8em;
+  z-index: 9999;
+}
+.navbar{
   background: var(--bs-white);
 }
-
+.dark-mode .navbar{
+  background: #181818;
+}
 body {
   box-sizing: border-box;
   margin: 0;
@@ -21764,7 +21786,8 @@ body {
   font-family: "OpenSans";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  width: 100% !important;
+  overflow-x: hidden !important;
   transition: 0.2s;
 }
 
@@ -21903,7 +21926,7 @@ body::-webkit-scrollbar-track {
   height: auto;
   position: absolute;
   margin-top: 1.3em;
-  left: 55%;
+  margin-left: 7em;
   fill: var(--bs-secondary-bg);
   opacity: 1;
   filter: brightness(98%);
@@ -22338,6 +22361,17 @@ body::-webkit-scrollbar-track {
   height: 33.5vw;
   cursor: pointer;
   transition: 0.1s;
+  animation: scale 0.3s linear forwards;
+  overflow:hidden;
+  scale: 0.9;
+}
+@keyframes scale {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 .projetArticle:hover{
   background: var(--bs-light-bg-subtle);
@@ -22352,6 +22386,8 @@ body::-webkit-scrollbar-track {
 .para-desc{
   height: 8vh;
   overflow: hidden;
+  text-overflow: ellipsis;
+  width:25vw;
   margin-top: -0.4em;
 }
 /* PAGE BUTTON PAGGINATION */
@@ -22359,11 +22395,11 @@ body::-webkit-scrollbar-track {
   display: flex;
   flex: row;
   gap: 0.5em;
-  margin-top: 0.2em;
+  margin-top: -0.5em !important;
 }
 
 .pagination button{
-  border-radius: 50%;
+  border-radius: 0.1em;
   border: none;
   outline: 1.5px solid silver;
   padding-left: 0.7em;
@@ -22371,7 +22407,7 @@ body::-webkit-scrollbar-track {
   padding-top: 0.2em;
   padding-bottom: 0.2em;
   font-weight: 500;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 .pagination button:first-child{
   position: absolute;

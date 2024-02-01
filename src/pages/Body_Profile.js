@@ -27,10 +27,10 @@ function Body_Profile() {
                 </article>
 
                 <article className='article-location'>
-                  {/* <p>
-                      <strong className='text-primary'>Âge:&nbsp;</strong>
-                      ___
-                    </p> */}
+                  <p>
+                      <strong className='text-primary'>Email:&nbsp;</strong>
+                      <span id='profile-email'>tojorasii1619@gmail.com</span>
+                    </p>
                   <p>
                     <strong className='text-primary'>Statut:&nbsp;</strong>
                     Célibataire
@@ -46,7 +46,7 @@ function Body_Profile() {
           </section>
           <section className='Profile-content d-flex flex-column gap-0'>
             <article className=''>
-              <p className='fw-semibold fs-5 text-primary content-profile'>Description<br /><p className='fs-6 text-gris fw-normal p-2 rounded-1'>je suis un Developpeur web autodidacte passionné par la création de sites web modernes et esthétiquement plaisants.<br />Mon parcours en tant qu' autodidacte témoigne de ma détermination à constamment améliorer mes compétences et à rester à la pointe des dernières technologies et tendances</p></p>
+              <p className='fw-semibold fs-5 text-primary content-profile'>Description<br /><p className='fs-6 text-gris fw-normal p-2 rounded-1'>Je suis un Developpeur web autodidacte passionné par la création de sites web modernes et esthétiquement plaisants.<br />Mon parcours en tant qu' autodidacte témoigne de ma détermination à constamment améliorer mes compétences et à rester à la pointe des dernières technologies et tendances</p></p>
               <div className='footer-profile'>
                 <p className='fw-semibold fs-5 mt-4 text-primary'>Personnalité</p>
                 <div class="flex-wrapper">
@@ -162,7 +162,7 @@ function Body_Profile() {
                     <i className="bi-facebook hover-follow h-75 ps-1 pe-1 rounded-1"></i>
                     <i className="bi-linkedin hover-follow h-75 ps-1 pe-1 rounded-1"></i>
                     <i className="bi-whatsapp hover-follow h-75 ps-1 pe-1 rounded-1"></i>
-                    <i className="bi-behance hover-follow h-75 ps-1 pe-1 rounded-1"></i>
+                    <i className="bi-github hover-follow h-75 ps-1 pe-1 rounded-1"></i>
                   </span>
                 </p>
               </article>

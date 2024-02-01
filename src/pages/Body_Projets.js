@@ -1,7 +1,8 @@
 import React from 'react'
 import portfolio from '../tools/image/portfolio darkmode.png'
 import password from '../tools/image/password.png'
-import travel from '../tools/image/travel.png'
+import travel from '../tools/image/travels.png'
+import calculatrice from '../tools/image/calculatrice.png'
 import { useState } from 'react';
 
 function Body_Projets() {
@@ -19,7 +20,35 @@ function Body_Projets() {
         { 
             links: "password-validation-tojo.vercel.app",
             imageUrl: password,
+            title: 'Muscle App',
+            desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate maiores reiciendis facilis ea omnis, aspernatur iure laboriosam porro esse veniam!',
+            tags: '#NextJs, #Css' 
+        },
+        { 
+            links: "travel-calculator.vercel.app",
+            imageUrl: travel,
+            title: 'Travel Calculator',
+            desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate maiores reiciendis facilis ea omnis, aspernatur iure laboriosam porro esse veniam!',
+            tags: '#HTML, #CSS, #Javascript' 
+        },
+        { 
+            links: "password-validation-tojo.vercel.app",
+            imageUrl: password,
             title: 'Password Validation',
+            desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate maiores reiciendis facilis ea omnis, aspernatur iure laboriosam porro esse veniam!',
+            tags: '#HTML, #CSS, #Javascript' 
+        },
+        { 
+            links: "password-validation-tojo.vercel.app",
+            imageUrl: calculatrice,
+            title: 'Calculatrice',
+            desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate maiores reiciendis facilis ea omnis, aspernatur iure laboriosam porro esse veniam!',
+            tags: '#HTML, #CSS, #Javascript' 
+        },
+        { 
+            links: "password-validation-tojo.vercel.app",
+            imageUrl: password,
+            title: 'Snake game',
             desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate maiores reiciendis facilis ea omnis, aspernatur iure laboriosam porro esse veniam!',
             tags: '#HTML, #CSS, #Javascript' 
         }
@@ -39,13 +68,33 @@ function Body_Projets() {
         setCurrentPage(page);
     };
     return (
-        <div style={{ paddingTop: "5.1em" }} className='ps-2 pe-2 Projets'>
+        <div className='Projets'>
             <main>
-                <div className='p-4 pe-5 ps-5 pb-4 rounded-1 d-flex flex-column align-items-center'>
-                    <section>
-                        <p className='text-primary fs-3 fw-bold'>Mes Projets</p>
+                <div className='p-4 pe-5 ps-5 rounded-1 d-flex flex-column gap-1'>
+                    <section className="d-flex flex-row justify-content-between align-items-center ps-3 pe-3 mt-2">
+                        <div id='text-project'>
+                        <p className='text-primary fs-3 fw-bold ms-5' >Mes Projets</p>
+                        </div>
+                        {/* Pagination */}
+                    <div className='pagination pb-2 me-5'>
+                        <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>
+                            <i className='bi-chevron-left'></i>
+                        </button>
+                        {Array.from({ length: totalPages }, (_, i) => (
+                            <button
+                                key={i + 1}
+                                onClick={() => handlePageChange(i + 1)}
+                                className={currentPage === i + 1 ? 'active-page' : ''}
+                            >
+                                {i + 1}
+                            </button>
+                        ))}
+                        <button onClick={() => setCurrentPage(currentPage + 1)} disabled={endIndex >= projects.length}>
+                            <i className='bi-chevron-right'></i>
+                        </button>
+                    </div>
                     </section>
-                    <section className='d-flex flex-row justify-content-between gap-4'>
+                    <section className='projetSection' style={{marginTop: "-0.7em"}}>
                         {projectsToShow.map((project, index) => (
                             <article
                                 key={index}
@@ -66,34 +115,17 @@ function Body_Projets() {
                             </article>
                         ))}
                     </section>
-                    <span className='d-flex flex-row me-1 mt-2'>
+                    <span className='d-flex flex-row justify-content-center me-1' style={{marginTop:"-0.8em"}}>
                         {Array.from({ length: totalPages }, (_, i) => (
 
-                            <i className='bi-dot fs-3'
+                            <i className='bi-dot fs-2'
                                 key={i + 1}
                                 onClick={() => handlePageChange(i + 1)}
                             ></i>
 
                         ))}
                     </span>
-                    {/* Pagination */}
-                    <div className='pagination pb-2'>
-                        <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>
-                            <i className='bi-chevron-left'></i>
-                        </button>
-                        {Array.from({ length: totalPages }, (_, i) => (
-                            <button
-                                key={i + 1}
-                                onClick={() => handlePageChange(i + 1)}
-                                className={currentPage === i + 1 ? 'active-page' : ''}
-                            >
-                                {i + 1}
-                            </button>
-                        ))}
-                        <button onClick={() => setCurrentPage(currentPage + 1)} disabled={endIndex >= projects.length}>
-                            <i className='bi-chevron-right'></i>
-                        </button>
-                    </div>
+                    
                 </div>
             </main >
         </div >

@@ -13,6 +13,7 @@ import Loading from './components/Loading';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Projets from './components/Projets';
+import './tools/styles/responsive.css';
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -112,8 +113,10 @@ function App() {
               </span>
             </article>
           </section>
+          <div className="theme">
           <i className='bi-moon-stars text-primary fs-4' id="moon" onClick={toggleDarkMode}></i>
           <i className='bi-sun fs-4' id="sun" onClick={toggleDarkMode}></i>
+          </div>
         </article>
         <HashRouter>
           <Routes>

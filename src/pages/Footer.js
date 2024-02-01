@@ -33,7 +33,7 @@ function Footer() {
             </article>
             <article>
               <strong class="fs-5 para-danger para-line">Portfolio</strong>
-              <p className='mt-3 text-primary cv-foot' onClick={download}>Mon Curriculum vitae</p>
+              <NavLink style={{ textDecoration: 'none' }} to="/cv"><p className='mt-3 text-primary cv-foot'>Mon Curriculum vitae</p></NavLink>
               <NavLink style={{ textDecoration: 'none' }} to="/profile"><p>Mon profile</p></NavLink>
               <NavLink style={{ textDecoration: 'none' }} to="/projets"><p>Mes projets</p></NavLink>
             </article>
