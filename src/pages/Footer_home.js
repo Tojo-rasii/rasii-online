@@ -1,6 +1,8 @@
 
 import axios from 'axios';
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next';
+
 
 // axios.get('http:/')
 // .then(response =>{
@@ -24,6 +26,9 @@ function Footer_home() {
     const handleInputChange = (e) =>{
         setInputValue(e.target.value);
     }
+
+  const { t } = useTranslation();
+
     return (
         <div>
             <main className="Footer-contact shadow-sm rounded-1 p-4 mb-3">
@@ -38,19 +43,19 @@ function Footer_home() {
                         <i className='bi-star-fill fs-5 text-warning'></i>
                         <i className='bi-star-fill fs-5 text-warning'></i>
                     </picture>
-                    <p className='text-gris fw-semibold mt-2 w-75'>N'oubliez pas de me laisser quelques message en donnant votre avis</p>
+                    <p className='text-gris fw-semibold mt-2 w-75'>{t("desc-c")}</p>
                 </article>
                  <article className='Formulaire'>
              <form onSubmit={handleSubmit}> 
-             <label htmlFor="">Nom</label><br /> 
+             <label htmlFor="">{t("label-c1")}</label><br /> 
              <input type="text" name='name' value={inputValue} onChange={handleInputChange} className='p-3 rounded-1 w-75 mt-1 shadow-sm'/><br /> 
-                        <label htmlFor="" className='mt-2'>Prenom</label><br />
+                        <label htmlFor="" className='mt-2'>{t("label-c2")}</label><br />
                         <input type="text" name='firstname' className='p-3 rounded-1 w-75 mt-1 shadow-sm'/><br />
-                        <label htmlFor="" className='mt-2'>Email</label><br />
+                        <label htmlFor="" className='mt-2'>{t("label-c3")}</label><br />
                         <input type="email" name='address' className='p-3 rounded-1 w-75 mt-1 shadow-sm'/><br />
-                        <label htmlFor="" className='mt-2'>Message</label><br />
+                        <label htmlFor="" className='mt-2'>{t("label-c4")}</label><br />
                         <textarea name='message'  className='p-3 rounded-1 w-75 mt-1 shadow-sm'></textarea><br />
-                        &nbsp;<input type="submit" value="Envoyer" className='btn btn-primary ms-5 mt-2 p-3 w-50 rounded-1 fw-semibold
+                        &nbsp;<input type="submit" value={t("label-c5")} className='btn btn-primary ms-5 mt-2 p-3 w-50 rounded-1 fw-semibold
                         '/>
                         <p className='value'></p> 
             </form>

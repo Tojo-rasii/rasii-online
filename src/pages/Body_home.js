@@ -36,7 +36,7 @@ function Body_home() {
                 <div className='name'><p className='h2 fw-bold'>Tojo_RASAMIMANANA</p></div>
               </article>
             </section>
-            <p className='text-gris fw-semibold mt-1 descMob'> un développeur front-end passionné du web, dédié à donner vie à vos visions numériques.
+            <p className='text-gris fw-semibold mt-1 descMob'>{t("description1")}
             </p>
             <section className='d-flex flex-row gap-2'>
               <NavLink to="/profile"><button className='btn btn-danger fw-semibold rounded-1'>{t("know")}</button></NavLink>

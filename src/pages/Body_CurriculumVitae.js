@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import curriculum from '../tools/image/cv.png'
+import curriculum from '../tools/image/cvs.png'
 
 function Body_CurriculumVitae(){
   const [active, setActive] = useState(false);
@@ -9,7 +9,7 @@ function Body_CurriculumVitae(){
       const a = document.createElement('a');
       a.style.display = 'none';
       a.href = url;
-      a.download = 'cv.pdf';
+      a.download = 'CV_Tojo';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);

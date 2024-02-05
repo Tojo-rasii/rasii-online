@@ -21394,22 +21394,27 @@ ul {
   padding-top: 1em;
   border-radius: 0.6em;
 }
-.article-location p{
-  overflow:hidden;
-  width:15vw;
+
+.article-location p {
+  overflow: hidden;
+  width: 15vw;
   text-overflow: ellipsis;
   cursor: default;
 }
-#profile-email{
+
+#profile-email {
   cursor: pointer;
 }
-#profile-email:hover{
+
+#profile-email:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
 .dark-mode .article-location {
   background: none;
 }
+
 .Profile-head {
   background: none;
   display: flex;
@@ -21773,12 +21778,15 @@ ul {
   margin-top: -3.8em;
   z-index: 9999;
 }
-.navbar{
+
+.navbar {
   background: var(--bs-white);
 }
-.dark-mode .navbar{
+
+.dark-mode .navbar {
   background: #181818;
 }
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -21877,13 +21885,16 @@ body::-webkit-scrollbar-track {
   outline: 2px solid var(--bs-purple);
 }
 
-.langage-bg:nth-child(5):hover,
+.langage-bg:nth-child(5):hover {
+  outline: 2px solid var(--bs-dark-text-emphasis);
+}
+
 .langage-bg:nth-child(6):hover {
   outline: 2px solid var(--bs-info);
 }
 
 .langage-bg:nth-child(7):hover {
-  outline: 2px solid var(--bs-purple);
+  outline: 2px solid var(--bs-primary);
 }
 
 .langage-bg:nth-child(8):hover {
@@ -21891,7 +21902,7 @@ body::-webkit-scrollbar-track {
 }
 
 .langage-bg:nth-child(9):hover {
-  outline: 2px solid var(--bs-orange);
+  outline: 2px solid #22ea82
 }
 
 .langage-bg:nth-child(10):hover {
@@ -22341,55 +22352,66 @@ body::-webkit-scrollbar-track {
 }
 
 /* PROJECT */
-.Projets{
+.Projets {
   height: 100vh;
 }
-.dark-mode .Projets{
+
+.dark-mode .Projets {
   background: #141414;
   height: max-content;
   padding-bottom: 1.6em;
 }
-.Projets main div{
+
+.Projets main div {
   background: #fff;
 }
-.dark-mode .Projets main div{
+
+.dark-mode .Projets main div {
   background: #141414;
 }
-.projetArticle{
+
+.projetArticle {
   background: #fff;
   width: 27vw;
   height: 33.5vw;
   cursor: pointer;
   transition: 0.1s;
   animation: scale 0.3s linear forwards;
-  overflow:hidden;
+  overflow: hidden;
   scale: 0.9;
 }
+
 @keyframes scale {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+
+  100% {
     opacity: 1;
   }
 }
-.projetArticle:hover{
+
+.projetArticle:hover {
   background: var(--bs-light-bg-subtle);
 }
-.projetArticle:active{
+
+.projetArticle:active {
   scale: 0.9;
 }
-.dark-mode .projetArticle{
+
+.dark-mode .projetArticle {
   background: #181818;
-  outline: 2px solid  #212529;
+  outline: 2px solid #212529;
 }
-.para-desc{
+
+.para-desc {
   height: 8vh;
   overflow: hidden;
   text-overflow: ellipsis;
-  width:25vw;
+  width: 25vw;
   margin-top: -0.4em;
 }
+
 /* PAGE BUTTON PAGGINATION */
 .pagination {
   display: flex;
@@ -22398,7 +22420,7 @@ body::-webkit-scrollbar-track {
   margin-top: -0.5em !important;
 }
 
-.pagination button{
+.pagination button {
   border-radius: 0.1em;
   border: none;
   outline: 1.5px solid silver;
@@ -22409,30 +22431,35 @@ body::-webkit-scrollbar-track {
   font-weight: 500;
   font-size: 1em;
 }
-.pagination button:first-child{
+
+.pagination button:first-child {
   position: absolute;
   top: 40%;
   left: -1%;
   font-size: 3.5em;
 }
-.pagination button:last-child{
+
+.pagination button:last-child {
   position: absolute;
   top: 40%;
   left: 91.5%;
   font-size: 3.5em;
 }
-.pagination button:is(:first-child, :last-child){
+
+.pagination button:is(:first-child, :last-child) {
   background: none;
   outline: none;
   cursor: default;
   color: var(--bs-info);
 }
-.pagination button:is(:first-child, :last-child) i{
+
+.pagination button:is(:first-child, :last-child) i {
   cursor: pointer;
 }
-.pagination button:is(:first-child, :last-child).active-page{
- background: none;
- border: none;
+
+.pagination button:is(:first-child, :last-child).active-page {
+  background: none;
+  border: none;
 }
 
 /* .pagination button{
@@ -22443,19 +22470,23 @@ body::-webkit-scrollbar-track {
   cursor: default;
   color: silver;
 }
-.pagination button:is(:disabled) i{
+
+.pagination button:is(:disabled) i {
   cursor: default;
 }
 
-.pagination button:first-child:focus, button:last-child:focus {
+.pagination button:first-child:focus,
+button:last-child:focus {
   color: var(--bs-info);
 }
+
 .pagination button:nth-child(2):focus {
   background: var(--bs-primary);
   /* outline: 2px solid var(--bs-primary); */
   border: none;
   color: #fff;
 }
+
 .pagination button:nth-child(3):focus {
   background: var(--bs-primary);
   /* outline: 2px solid var(--bs-primary); */
@@ -22463,7 +22494,7 @@ body::-webkit-scrollbar-track {
   color: #fff;
 }
 
-.active-page{
+.active-page {
   background: var(--bs-primary);
   color: var(--bs-white);
   /* outline: 2px solid var(--bs-primary); */
