@@ -16,6 +16,23 @@
   --bd-danger-dark: #ec1111;
 }
 
+#links {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 18em;
+  text-wrap: nowrap;
+}
+/* Annuler la couleur et le soulignement des liens <a> */
+#a_Project{
+  color: inherit; /* Utilise la couleur par défaut du texte */
+  text-decoration: none; /* Supprime le soulignement */
+}
+
+/* Styling pour les liens <a> au survol (facultatif) */
+#a_Project:hover {
+  opacity: 0.9; /* Soulignement au survol */
+}
+
 .add {
   display: block;
 }
@@ -507,6 +524,7 @@
   border-bottom: 1px solid rgb(86, 86, 86);
 
 }
+
 .dark-mode .mobile_list article:hover {
   background: var(--bs-primary);
 }
@@ -533,9 +551,11 @@
     max-height: 450%;
   }
 }
-.mobile_list article:first-child{
-  margin-top:-0.1em;
+
+.mobile_list article:first-child {
+  margin-top: -0.1em;
 }
+
 .mobile_list article {
   background: transparent;
   cursor: pointer;
@@ -596,7 +616,8 @@
   fill: var(--bs-danger);
 }
 
-.mobile-active .i-services,.mobile-active .i-pencil{
+.mobile-active .i-services,
+.mobile-active .i-pencil {
   color: var(--bs-danger);
   outline: 1px solid var(--bs-danger);
 }
@@ -646,7 +667,8 @@
   padding-bottom: 1.7px;
   font-size: 15.5px;
 }
-.i-pencil{
+
+.i-pencil {
   outline: 0.1em solid var(--bs-primary);
   border-radius: 50%;
   padding-inline-start: 4.5px;

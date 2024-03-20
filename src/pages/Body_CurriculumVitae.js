@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import curriculum from '../tools/image/cvs.png'
+import { useTranslation } from 'react-i18next';
 
 function Body_CurriculumVitae(){
   const [active, setActive] = useState(false);
@@ -18,6 +19,9 @@ function Body_CurriculumVitae(){
       setActive(!active)
     }
 
+  const { t } = useTranslation();
+
+
     return (
       <div>
         <main className='Cv'>
@@ -28,10 +32,10 @@ function Body_CurriculumVitae(){
           </section>
             <section className='p-4 rounded-1 w-50 Cv-desc'>
                <article>
-                <p className='fs-6 w-75 ms-5 mt-3'>Mon Curriculum Vitae est disponible en téléchargement direct pour en savoir plus sur mon parcours.</p>
+                <p className='fs-6 w-75 ms-5 mt-3'>{t("Cv-desc")}</p>
                 </article>
                <article>
-                <button className='d-flex flex-row gap-2 rounded-5 text-white pe-3' style={{marginTop: "1em",marginLeft : "12.5em", position: "absolute"}} onClick={togg}><i className='bi-cloud-arrow-down-fill fs-3 ms-2'></i><span className='mt-2'>Telecharger</span><i className='bi-caret-down mt-2 fs-7'></i></button>
+                <button className='d-flex flex-row gap-2 rounded-5 text-white pe-3' style={{marginTop: "1em",marginLeft : "12.5em", position: "absolute"}} onClick={togg}><i className='bi-cloud-arrow-down-fill fs-3 ms-2'></i><span className='mt-2'>{t("Cv-btn")}</span><i className='bi-caret-down mt-2 fs-7'></i></button>
                 <div className='rounded-2 mt-0 link-mobile' style={{ display: active ? "block" : "none" }}>
                 <div className='d-flex flex-row gap-1' onClick={download}>
                 <span>

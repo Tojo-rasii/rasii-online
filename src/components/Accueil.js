@@ -12,7 +12,7 @@ export class Accueil extends Component {
         return (
             <>
                 <div>
-                    <Navbar />
+                    <Navbar className="fixed"/>
                     <Body_home /> 
                     <Main_home />
                     <Skills />

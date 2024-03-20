@@ -1,17 +1,10 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import { NavLink } from "react-router-dom";
 
 function Footer() {
-  const download = () => {
-    const url = 'cv.pdf';
-    const a = document.createElement('a');
-    a.style.display = 'none';
-    a.href = url;
-    a.download = 'cv.pdf';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  };
+  const { t } = useTranslation();
+
   return (
     <>
       <main className='footer bottom-fixed w-100'>
@@ -26,16 +19,16 @@ function Footer() {
               </div>
             </article>
             <article>
-              <strong class="fs-5 para-danger para-line">Lien actif</strong>
-              <NavLink style={{ textDecoration: 'none' }} to="/services"><p className='mt-3'>Services offerts</p></NavLink>
-              <NavLink style={{ textDecoration: 'none' }} to="/apropos"><p>Plus d'informations..</p></NavLink>
-              <NavLink style={{ textDecoration: 'none' }} to="/contact"><p>Toutes les coordonnées.</p></NavLink>
+              <strong class="fs-5 para-danger para-line">{t("active-link")}</strong>
+              <NavLink style={{ textDecoration: 'none' }} to="/services"><p className='mt-3'>{t("service-offer")}</p></NavLink>
+              <NavLink style={{ textDecoration: 'none' }} to="/apropos"><p>{t("More-information")}</p></NavLink>
+              <NavLink style={{ textDecoration: 'none' }} to="/contact"><p>{t("All-contact")}</p></NavLink>
             </article>
             <article>
               <strong class="fs-5 para-danger para-line">Portfolio</strong>
-              <NavLink style={{ textDecoration: 'none' }} to="/cv"><p className='mt-3 text-primary cv-foot'>Mon Curriculum vitae</p></NavLink>
-              <NavLink style={{ textDecoration: 'none' }} to="/profile"><p>Mon profile</p></NavLink>
-              <NavLink style={{ textDecoration: 'none' }} to="/projets"><p>Mes projets</p></NavLink>
+              <NavLink style={{ textDecoration: 'none' }} to="/cv"><p className='mt-3 text-primary cv-foot'>{t("f-cv")}</p></NavLink>
+              <NavLink style={{ textDecoration: 'none' }} to="/profile"><p>{t("f-profile")}</p></NavLink>
+              <NavLink style={{ textDecoration: 'none' }} to="/projets"><p>{t("f-project")}</p></NavLink>
             </article>
             <article className="d-flex gap-2" id='icon-mobile'>
               <i className='bi bi-facebook fs-2 para-danger'></i>

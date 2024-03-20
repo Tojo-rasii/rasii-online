@@ -56,13 +56,13 @@ function App() {
       moon.style.display = "none";
       sun.style.display = "block";
       div.classList.add('dark-mode1');
-      localStorage.setItem('darkMode','disabled');
+      localStorage.setItem('darkMode', 'disabled');
     } else {
       body.classList.remove('dark-mode');
       moon.style.display = "block";
       sun.style.display = "none";
       div.classList.remove('dark-mode1');
-      localStorage.setItem('darkMode','enabled');
+      localStorage.setItem('darkMode', 'enabled');
     }
   }, [isDarkMode]);
 
@@ -87,35 +87,34 @@ function App() {
     }, 1500);
   };
   const { t } = useTranslation();
-
   return (
     <>
       <div>
-      {chargement && 
-      <div className='loading'>
-        <picture>
-        <div className="progressLoad">
-          <div className="progressLoad-value"></div>
-        </div>
-        </picture>
-        </div>}
+        {chargement &&
+          <div className='loading'>
+            <picture>
+              <div className="progressLoad">
+                <div className="progressLoad-value"></div>
+              </div>
+            </picture>
+          </div>}
         <article className='nav-4 mt-5 dark1'>
           <i className='bi-translate fs-4' id='translate_icon' onClick={togg}></i>
           <section className='translate shadow-lg' id='trsl' style={{ display: active ? "block" : "none" }}>
             <article>
               <span>
-                <p onClick={() => changeLanguage('en')}  style={{ color: langueActive === 'en' ? 'red' : '' }}>
-                Anglais (US)</p>
+                <p onClick={() => changeLanguage('en')} style={{ color: langueActive === 'en' ? 'red' : '' }}>
+                  Anglais (US)</p>
               </span>
               <span>
                 <p onClick={() => changeLanguage('fr')} style={{ color: langueActive === 'fr' ? 'red' : '' }}
-          >Francais (FR)</p>
+                >Francais (FR)</p>
               </span>
             </article>
           </section>
           <div className="theme">
-          <i className='bi-moon-stars text-primary fs-4' id="moon" onClick={toggleDarkMode}></i>
-          <i className='bi-sun fs-4' id="sun" onClick={toggleDarkMode}></i>
+            <i className='bi-moon-stars text-primary fs-4' id="moon" onClick={toggleDarkMode}></i>
+            <i className='bi-sun fs-4' id="sun" onClick={toggleDarkMode}></i>
           </div>
         </article>
         <HashRouter>
@@ -133,7 +132,7 @@ function App() {
         </HashRouter>
         {/* Scroll to top button */}
         {showButton && (
-          <button className="scroll-to-top-button rounded-circle shadow-sm float-end" onClick={scrollToTop}>
+          <button className="scroll-to-top-button rounded-circle shadow-sm float-end ps-1 pe-1" onClick={scrollToTop}>
             <i className='bi-chevron-up fs-5'></i>
           </button>
         )}

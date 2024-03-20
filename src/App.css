@@ -190,7 +190,7 @@
   }
 }
 
-body {
+/* body {
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -203,7 +203,7 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   width: 100% !important;
   overflow-x: hidden !important;
-}
+} */
 
 hr {
   margin: 1rem 0;
@@ -21122,7 +21122,7 @@ ul {
 }
 
 .dark-mode .Apropos {
-  height: 214vh;
+  height: 240vh !important;
 }
 
 .Apropos div header {
@@ -21787,13 +21787,14 @@ ul {
   background: #181818;
 }
 
-body {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: "OpenSans";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   width: 100% !important;
   overflow-x: hidden !important;
   transition: 0.2s;
@@ -22405,10 +22406,10 @@ body::-webkit-scrollbar-track {
 }
 
 .para-desc {
-  height: 8vh;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 25vw;
+  width: 25em;
+  text-wrap: nowrap;
   margin-top: -0.4em;
 }
 

@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 @media (min-width: 150px) and (max-width: 2000px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 }
 
@@ -587,7 +587,7 @@
     padding-left: 0.5em !important;
     padding-right: 0.5em !important;
     border-radius: 50%;
-    margin-top: -12.5px;
+    margin-top: -10.5px;
     margin-left: -1px;
   }
 
@@ -598,7 +598,7 @@
     padding-left: 0.5em !important;
     padding-right: 0.5em !important;
     border-radius: 50%;
-    margin-top: -12.5px;
+    margin-top: -10.5px;
   }
 
   .nav-4 {
@@ -1475,5 +1475,110 @@
 
   .SK-Btn2 {
     margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .section-home article {
+    display: block;
+    margin-left: -6em;
+  }
+
+  .name {
+    margin-left: 6em !important;
+  }
+
+  .section-home2 article {
+    display: block;
+    margin-left: -13em;
+    scale: 0.9;
+  }
+
+  /* skills */
+  .skills-main {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em !important;
+    margin-left: 0 !important;
+  }
+
+  .skills-section:nth-child(1) {
+    width: 150em !important;
+  }
+}
+
+@media (min-width: 1150px) and (max-width: 1250px) {
+  .section-home article {
+    display: block;
+    margin-left: -6em;
+  }
+
+  .name {
+    margin-left: 6em !important;
+  }
+
+  .section-home2 article {
+    display: block;
+    margin-left: -10em;
+    scale: 0.9;
+  }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1250px) {
+  .section-home article {
+    display: block;
+    margin-left: -6em;
+  }
+
+  .name {
+    margin-left: 6em !important;
+  }
+
+  .section-home2 article {
+    display: block;
+    margin-left: -5em;
+    scale: 0.9;
+  }
+
+  /* skills */
+  .skills-main {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em !important;
+    margin-left: 0 !important;
+  }
+
+  .skills-section:nth-child(1) {
+    width: 150em !important;
+  }
+}
+
+
+@media (min-width: 1250px) and (max-width: 1300px) {
+  .section-home article {
+    display: block;
+    margin-left: -4.5em;
+  }
+
+  .name {
+    margin-left: 4.5em !important;
+  }
+
+  .section-home2 article {
+    display: block;
+    margin-left: -5em;
+  }
+
+  /* skills */
+  .skills-main {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em !important;
+    margin-left: 0 !important;
+  }
+
+  .skills-section:nth-child(1) {
+    width: 150em !important;
   }
 }
