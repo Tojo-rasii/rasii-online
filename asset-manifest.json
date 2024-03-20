@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/rasii-online/static/css/main.085fe683.css",
+    "main.js": "/rasii-online/static/js/main.0d3cea71.js",
+    "static/media/text2.jpg": "/rasii-online/static/media/text2.9f6e3eaae0d28e04d80a.jpg",
+    "static/media/muscle.png": "/rasii-online/static/media/muscle.fa0999ee543533194684.png",
+    "static/media/travels.png": "/rasii-online/static/media/travels.569fa50a544ff435e80b.png",
+    "static/media/calculatrice.png": "/rasii-online/static/media/calculatrice.12c4170fe214df4ecaaa.png",
+    "static/media/csf.png": "/rasii-online/static/media/csf.522d84342aca5e4ab08d.png",
+    "static/media/game snake.png": "/rasii-online/static/media/game snake.9951f0018be73d5b02e7.png",
+    "static/media/Nunito-VariableFont_wght.ttf": "/rasii-online/static/media/Nunito-VariableFont_wght.4a3eef3e0a61b7eb3eda.ttf",
+    "static/media/bootstrap-icons.woff?": "/rasii-online/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/Page.png": "/rasii-online/static/media/Page.66e1555ab8bc8cdf8463.png",
+    "static/media/Nunito-ExtraBold.ttf": "/rasii-online/static/media/Nunito-ExtraBold.99f1fa27c5aaa2c5afb6.ttf",
+    "static/media/bootstrap-icons.woff2?": "/rasii-online/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "static/media/musle.png": "/rasii-online/static/media/musle.a73da55c2ed502f866cd.png",
+    "static/media/portfolio darkmode.png": "/rasii-online/static/media/portfolio darkmode.453289df70dec5aa9e9c.png",
+    "static/media/cvs.png": "/rasii-online/static/media/cvs.796d3df03daa44320b19.png",
+    "static/media/C879AF5.jpeg": "/rasii-online/static/media/C879AF5.f9696dc92eb34c8e487f.jpeg",
+    "static/media/service.png": "/rasii-online/static/media/service.7d4de2230a723b93e698.png",
+    "static/media/dark.png": "/rasii-online/static/media/dark.c0800f3be135582205da.png",
+    "static/media/tj.png": "/rasii-online/static/media/tj.d56cefdabed44fdb36ef.png",
+    "static/media/password.png": "/rasii-online/static/media/password.296ba7dfff5398d87fd7.png",
+    "static/media/react.png": "/rasii-online/static/media/react.20adfb35ae6a6e5817bf.png",
+    "index.html": "/rasii-online/index.html",
+    "main.085fe683.css.map": "/rasii-online/static/css/main.085fe683.css.map",
+    "main.0d3cea71.js.map": "/rasii-online/static/js/main.0d3cea71.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.085fe683.css",
+    "static/js/main.0d3cea71.js"
+  ]
+}
